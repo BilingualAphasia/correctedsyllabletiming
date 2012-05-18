@@ -1,5 +1,5 @@
 #read in data
-syllables <- read.table("original_vs_corrected.csv", header=TRUE, sep="," )
+syllables <- read.table("original_vs_corrected_paired.csv", header=TRUE, sep="," )
 t.test(syllables$original,syllables$corrected,paired=TRUE, alt="less")
 
 
